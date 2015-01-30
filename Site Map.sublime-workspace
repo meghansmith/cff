@@ -1,0 +1,491 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"bacc",
+				"background-color"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"fos",
+				"font-size"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"be",
+				"be868d"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"fons",
+				"font-size"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"ce",
+				"cecece"
+			],
+			[
+				"fonts",
+				"font-style"
+			],
+			[
+				"iln",
+				"inline-block"
+			],
+			[
+				"miw",
+				"min-width"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"bord",
+				"border-top"
+			],
+			[
+				"paddi",
+				"padding-bottom"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"n",
+				"nav	Tag"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"select",
+				"selectarrow"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"bor",
+				"border-left"
+			],
+			[
+				"borderb",
+				"border-bottom-width"
+			],
+			[
+				"top",
+				"margin-top"
+			],
+			[
+				"bacgr",
+				"background"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"al",
+				"vertical-align"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"di",
+				"d-ib+	display: inline-block;\n*display: inline;\n*zoom: 1;"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"alig",
+				"vertical-align"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"cel",
+				"cellspacing	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/suleml11/Documents/TIY/TIY Week 3/murphygrantland/README.md",
+		"/Users/suleml11/Documents/TIY/TIY Week 2/cma-master/README.md",
+		"/Users/suleml11/Documents/TIY/TIY Week 3/murphygrantland/practiceareas.html",
+		"/Users/suleml11/Documents/TIY/TIY Week 3/murphygrantland/news.html",
+		"/Users/suleml11/Documents/TIY/TIY Week 3/murphygrantland/aboutus.html",
+		"/Users/suleml11/Documents/TIY/TIY Week 3/murphygrantland/recentcases.html",
+		"/Users/suleml11/Documents/TIY/TIY Week 3/murphygrantland/js/javascript.js",
+		"/Users/suleml11/Documents/TIY/TIY Week 2/cma-master/css/styles.css",
+		"/Users/suleml11/Documents/TIY/TIY Week 3/murphygrantland/content/locked43.svg",
+		"/Users/suleml11/Documents/TIY/TIY Week 2/cma-master/learn.html",
+		"/Users/suleml11/Documents/TIY/TIY Week 2/cma-master/art.html",
+		"/Users/suleml11/Documents/TIY/TIY Week 2/cma-master/aboutus.html",
+		"/Users/suleml11/Documents/TIY/TIY Week 3/rockpaperscissors.js",
+		"/Users/suleml11/Documents/TIY/TIY Week 2/cma-master/rockpaperscissors.html",
+		"/Users/suleml11/Documents/TIY/TIY Week 2/cma-master/memberregistration.html",
+		"/Users/suleml11/Documents/TIY/cma-master/memberregistration.html",
+		"/Users/suleml11/Documents/TIY/cma-master/css/styles.css",
+		"/Users/suleml11/Documents/TIY/TIY Week 2/concept-master/css/styles.css",
+		"/Users/suleml11/Documents/TIY/cma-master/design/CMA.txt",
+		"/Users/suleml11/Documents/TIY/concept-master/css/styles.css",
+		"/Users/suleml11/Documents/TIY/responsivedemo-master/css/styles.css",
+		"/Users/suleml11/Documents/TIY/responsivedemo-master/index.html",
+		"/Users/suleml11/Documents/TIY/citizens/css/styles.css",
+		"/Users/suleml11/Documents/TIY/concept-master/README.md",
+		"/Users/suleml11/Documents/TIY/concept-master/content/productpage.txt",
+		"/Users/suleml11/Documents/TIY/TIY Week 2/cssexamples-master/cssexamples3.html",
+		"/Users/suleml11/Documents/TIY/TIY Week 2/cssexamples-master/css/examples3.css",
+		"/Users/suleml11/Documents/TIY/citizens/informationcenter.html",
+		"/Users/suleml11/Documents/TIY/citizens/contactus.html",
+		"/Users/suleml11/Documents/TIY/citizens/newsroom.html",
+		"/Users/suleml11/Documents/TIY/citizens/index.html",
+		"/Users/suleml11/Documents/TIY/TIY Week 1/outlanderspices/css/styles.css",
+		"/Users/suleml11/Documents/TIY/TIY Week 2/cssexamples-master/cssexamples2.html",
+		"/Users/suleml11/Documents/TIY/TIY Week 2/cssexamples-master/css/examples2.css",
+		"/Users/suleml11/Documents/TIY/normalize302.css",
+		"/Users/suleml11/Documents/TIY/townhall/index.html",
+		"/Users/suleml11/Documents/TIY/outlanderspices/contactus.html",
+		"/Users/suleml11/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/suleml11/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/suleml11/Documents/TIY/outlanderspices/locations.html",
+		"/Users/suleml11/Documents/TIY/citizens/newsroom2.html",
+		"/Users/suleml11/Documents/TIY/citizens/content/informationcenter.html",
+		"/Users/suleml11/Documents/TIY/citizens/content/informationcenter.txt",
+		"/Users/suleml11/Documents/TIY/citizens/README.md",
+		"/Users/suleml11/Documents/TIY/citizens/.gitignore",
+		"/Users/suleml11/Documents/TIY/TIY Week 1/example.html",
+		"/Users/suleml11/Documents/TIY/TIY Week 1/examplecss.css",
+		"/Users/suleml11/Documents/TIY/outlanderspices/recipes.html",
+		"/Users/suleml11/Documents/TIY/outlanderspices/AboutUs.html",
+		"/Users/suleml11/Documents/TIY/outlanderspices/products.html",
+		"/Users/suleml11/Documents/TIY/outlanderspices/orderonline.html",
+		"/Users/suleml11/Documents/TIY/outlanderspices/images/logo.gif",
+		"/Users/suleml11/Documents/TIY/outlanderspices/css/styles.css",
+		"/Users/suleml11/Documents/TIY/outlanderspices/index.html",
+		"/Users/suleml11/Documents/TIY/townhall/CSS/styles.css",
+		"/Users/suleml11/Documents/TIY/outlanderspices/productsalt.html",
+		"/Users/suleml11/Documents/TIY/townhall/tickets.html",
+		"/Users/suleml11/Documents/TIY/TIY Week 1/sampleform.html",
+		"/Users/suleml11/.bash_profile",
+		"/Users/suleml11/outlanderspices/AboutUs.html",
+		"/Users/suleml11/outlanderspices/products.html",
+		"/Users/suleml11/outlanderspices/productsalt.html",
+		"/Users/suleml11/citizens/newsroom.html",
+		"/Users/suleml11/outlanderspices/index.html",
+		"/Users/suleml11/citizens/index.html",
+		"/Users/suleml11/outlanderspices/recipes.html",
+		"/Users/suleml11/townhall/luncheons.html",
+		"/Users/suleml11/townhall/index.html",
+		"/Users/suleml11/Documents/TIY Week 1/PracticeHTMLfile.html"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"after",
+			"400px",
+			"hover",
+			">\n",
+			";\n",
+			"Grac",
+			"{\n",
+			">\n",
+			"border",
+			"155"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Site Map.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 228.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
