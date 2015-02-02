@@ -300,7 +300,7 @@ footer p.contactInfo {
 
 
 /*========================================================================
-						Media Query 700 - fix header home
+						Media Query 700 
 ==========================================================================*/
 @media screen and (min-width: 700px) {
 
@@ -357,7 +357,7 @@ footer p.contactInfo {
 		background: none;
 		width: 25%;
 		margin-left: 3%;
-		bottom: 133px;
+		bottom: 5%;
 		text-shadow: 0 1px 2px #000;
 	}
 
@@ -371,7 +371,7 @@ footer p.contactInfo {
 	.home section:first-child{
 		width: 48%;
 		float: left;
-		margin-right: 4%;
+		padding-right: 4%;
 	}
 	.home section:nth-child(2){
 		width: 48%;
@@ -419,4 +419,53 @@ footer p.contactInfo {
 		float: left;
 	}
 
+}
+
+
+
+
+
+
+
+
+
+/*========================================================================
+						Media Query 930 - 
+==========================================================================*/
+
+@media screen and (min-width: 930px){
+	nav>a {
+		right: 1%;
+	}
+	div.textOver p {
+		font-size: 1.3em;
+	}
+
+	.home section:first-child{
+		width: 35%;
+	}
+	.home section:nth-child(2){
+		width:35%;
+		padding-right: 4%;
+	}
+	.home section:nth-child(3) {
+		width: 30%;
+		float: left;
+		clear: none;
+		padding-top: 0;
+	}
+	.home section:nth-child(3) h2{
+		margin-top: 20px;
+	}
+	.home section:nth-child(3) .button {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+}
+
+@media screen and (min-width: 1100px){
+	.wrapper {
+		width: 1040px;
+		margin: 0 auto;
+	}
 }
