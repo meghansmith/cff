@@ -319,7 +319,8 @@ footer p.contactInfo {
 
 	.mainNav li {
 		float: left;
-		padding-left: 3%;
+		padding-left: 2.5%;
+		margin-right: 0;
 	}
 	.mainNav li:first-child{
 		width: 18%;
@@ -335,7 +336,6 @@ footer p.contactInfo {
 	}
 	.mainNav li a {
 		border:none;
-
 	}
 	.mainNav ul {
 		background-color: #466369;
@@ -360,6 +360,11 @@ footer p.contactInfo {
 		bottom: 133px;
 		text-shadow: 0 1px 2px #000;
 	}
+
+
+	/*=============================
+		700 Main Styles
+	==============================*/
 	.home h2.firstH2 {
 		margin-top: 20px;
 	}
@@ -385,6 +390,13 @@ footer p.contactInfo {
 		width: 43%;
 		margin: 0 3% 10px;
 	}
+
+
+
+
+	/*=======================
+		Footer Styles 700
+	=========================*/
 	section.preFooter{
 		margin-top: 0;
 	}
@@ -392,7 +404,19 @@ footer p.contactInfo {
 		display: inline-block;
 		width: 31%;
 	}
-
-
+	nav>ul>li {
+		display: inline-block;
+		width: 20%;
+		margin-right: 2%;
+		vertical-align: top;
+	}
+	footer p.innerContent {
+		display: inline-block;
+		width: 63%;
+	}
+	footer p.contactInfo {
+		width: 25%;
+		float: left;
+	}
 
 }
