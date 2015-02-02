@@ -199,7 +199,7 @@ section.preFooter {
 	font-size: 1.125em;
 	margin-top: 50px;
 }
-.preFooter section {
+.preFooter div {
 	text-align: center;
 }
 label>h2 {
@@ -360,6 +360,39 @@ footer p.contactInfo {
 		bottom: 133px;
 		text-shadow: 0 1px 2px #000;
 	}
+	.home h2.firstH2 {
+		margin-top: 20px;
+	}
+	.home section:first-child{
+		width: 48%;
+		float: left;
+		margin-right: 4%;
+	}
+	.home section:nth-child(2){
+		width: 48%;
+		float: left;
+	}
+	.home section:nth-child(2) h2{
+		margin-top: 20px;
+	}
+	.home section:nth-child(3){
+		clear: both;
+		padding-top: 5px;
+		max-width: 740px;
+		margin: 0 auto;
+	}
+	.home section:nth-child(3) .button {
+		width: 43%;
+		margin: 0 3% 10px;
+	}
+	section.preFooter{
+		margin-top: 0;
+	}
+	section.preFooter>div {
+		display: inline-block;
+		width: 31%;
+	}
+
 
 
 }
