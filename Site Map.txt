@@ -1,13 +1,11 @@
 About Us	
-	•About    - overview
+	•About    - overview (who we are)
 		◦	History
-		◦	Who We Are
 		◦	Board Of Trustees
 		◦	The Center Team
 	Programs (prev. Fatherhood Programs):
 		◦	Programs in SC (combine w/2nd in Fatherhood Programs)*
 		◦	Program Services*
-		◦	Testimonials*
 		◦	Child Support Services
 		▪	Operation Work
 		◦	Men's Health
@@ -24,20 +22,23 @@ Our Outreach
 	
 	
 	Tools (formerly Practicioners, funders, Partners)
-		▪	White Papers And Publications
-		▪	Presentations And Webinars
-		▪	Links To National Resources*
-		•	Funders, Partners & Policy-Makers
-		◦	Healthcare Partners
-		◦	Local Program Partners
-		◦	Policy Makers
-		◦	Featured Partner
-		◦	Featured Funder
-		•	Media
-		◦	SC Center for Fathers and Families video by Dust of the Ground
+		Media
+			•	Media
+			◦	SC Center for Fathers and Families video by Dust of the Ground
+			▪	White Papers And Publications
+			▪	Presentations And Webinars
+		Partners
+			•	Funders, Partners & Policy-Makers - call Advocates
+			◦	Healthcare Partners
+			◦	Local Program Partners
+			◦	Policy Makers
+			◦	Featured Partner
+			◦	Featured Funder
+		
 		Resources for Practicioners (formerly Practicioners)
 			◦	Responsible Father Registry
 			◦	Practitioner\'s Perspective
+			▪	Links To National Resources*
 
 How to help
 	*	Donate (form on page)
@@ -80,7 +81,7 @@ Get Help
 		▪	Collaboration With Child Welfare*
 		▪	Previous Work* (rename advocacy)
 	
-	Additional Resources (foremerly resources)
+	Outside Resources (foremerly resources) - both
 		◦	Resources For Fathers And Families
 		▪	Links To National Resources*
 		
