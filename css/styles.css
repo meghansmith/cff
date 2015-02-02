@@ -37,7 +37,7 @@ a{
 .button{
 	font-size: 1.125em;
 	color: #d5bc8c;
-	text-shadow: 0 2px #444;
+	text-shadow: 0 2px 2px #444;
 	display: inline-block;
 	width: 100%;
 	height: 40px;
@@ -59,6 +59,11 @@ a{
 .clearfix {
   *zoom: 1;
 }
+
+
+
+
+
 
 /*======================
 Header styles
@@ -107,7 +112,7 @@ nav>a {
 	right:-3%;
 	top:-9px;
 	color: #d5bc8c;
-	text-shadow: 0 2px #444;
+	text-shadow: 0 2px 2px #444;
 	text-decoration: none;
 	line-height: 16.5;
 	text-align: center;
@@ -124,30 +129,15 @@ nav>a {
 }
 .textOver p{
 	color: #d5bc8c;
-	text-shadow: 0 2px #444;
+	text-shadow: 0 2px 2px #444;
 	width: 100%;
 	position: absolute;
-	bottom: 0px;
+	bottom: -28px;
 	padding: 0;
 	margin-bottom:0;
+	background: rgb(0,48,91);
 }
-div.textOver {
-	width: 100%;
-	height: 70px;
-	position: absolute;
-	bottom:-27px;
 
-	background: rgb(0,48,91); /* Old browsers */
-
-background: -moz-linear-gradient(top, rgba(0,48,91,0) 0%, rgba(0,48,91,01) 50%, rgba(0,48,91,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,48,91,1)), color-stop(50%,rgba(0,48,91,1)), color-stop(100%,rgba(0,48,91,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(0,48,91,0) 0%,rgba(0,48,91,1) 50%,rgba(0,48,91,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(0,48,91,0) 0%,rgba(0,48,91,1) 50%,rgba(0,48,91,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(0,48,91,0) 0%,rgba(0,48,91,1) 50%,rgba(0,48,91,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom, rgba(0,48,91,0) 0%,rgba(0,48,91,1) 50%,rgba(0,48,91,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00305b', endColorstr='#00305b',GradientType=0 );
-
-}
 
 
 
@@ -157,6 +147,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00305b', end
 .intro{
 	font-weight: bold;
 }
+
+
+
+
+
+
 /*======================
 Main styles Home
 =====================*/
@@ -187,9 +183,12 @@ Main styles Home
 
 
 
-/*======================
-Footer styles
-=====================*/
+										/*==============================
+										Footer styles
+										===============================*/
+
+
+
 section.preFooter {
 	display: relative;
 	margin-top: 70px;
@@ -242,7 +241,7 @@ div.donateBadge{
 div.donateBadge p{
 	font-size: 1.1em;
 	color: #d5bc8c;
-	text-shadow: 0 2px #444;
+	text-shadow: 0 2px 2px #444;
 	padding-top: 25px;
 }
 div.donateBadge a {
@@ -271,3 +270,96 @@ footer p.contactInfo {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================================================================
+						Media Query 510 - fix header home
+==========================================================================*/
+
+@media screen and (min-width: 510px){
+	.textOver p{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		bottom: -23px;
+	}
+}
+
+
+
+
+
+
+/*========================================================================
+						Media Query 700 - fix header home
+==========================================================================*/
+@media screen and (min-width: 700px) {
+
+	/*===========================
+			Header Styles
+	===========================*/
+
+	.logoReplace a {
+		position: absolute;
+		left: 6%;
+	}
+	header>p {
+		text-align: right;
+		padding-top: 85px;
+	}
+
+	.mainNav li {
+		float: left;
+		padding-left: 3%;
+	}
+	.mainNav li:first-child{
+		width: 18%;
+	}
+	.mainNav li:nth-child(2){
+		width: 22%;
+	}
+	.mainNav li:nth-child(3){
+		width: 19%;
+	}
+	.mainNav li:nth-child(4) {
+		width: 25%;
+	}
+	.mainNav li a {
+		border:none;
+
+	}
+	.mainNav ul {
+		background-color: #466369;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+	nav>a {
+
+		height: 110px;
+		width: 116px;
+		background: url(../images/donateshort.png);
+		right:-1%;
+		top:-2px;
+		line-height: 6.5;
+		padding-left: 2px;
+
+	}
+	div.textOver p {
+		background: none;
+		width: 25%;
+		margin-left: 3%;
+		bottom: 133px;
+		text-shadow: 0 1px 2px #000;
+	}
+
+
+}
