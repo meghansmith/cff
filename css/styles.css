@@ -6,6 +6,7 @@
 body {
 	line-height: 1.5;
 	color: #222222;
+	background-color: f0e6d3
 }
 p, li {
 	font-family: Lato, sans-serif;
@@ -34,9 +35,12 @@ a{
 	position: absolute;
 	left: -9999px;
 }
+.hide {
+	display: none;
+}
 .button{
 	font-size: 1.125em;
-	color: #d5bc8c;
+	color: #f2e8d5;
 	text-shadow: 0 2px 2px #444;
 	display: inline-block;
 	width: 100%;
@@ -111,7 +115,7 @@ nav>a {
 	position: absolute;
 	right:4px;
 	top:-8px;
-	color: #d5bc8c;
+	color: #f2e8d5;
 	text-shadow: 0 1px 2px #444;
 	text-decoration: none;
 	line-height: 16.5;
@@ -121,7 +125,7 @@ nav>a {
 	font-weight: bold;
 }
 .mainNav ul li a{
-	color: #d5bc8c;
+	color: #f2e8d5;
 	text-shadow: 0 2px 2px #444;
 }
 .mainNav ul li ul {
@@ -167,14 +171,14 @@ nav.mainNav ul li {
 	
 }
 .textOver p{
-	color: #d5bc8c;
+	color: #f2e8d5;
 	text-shadow: 0 2px 2px #444;
 	width: 100%;
 	position: absolute;
 	bottom: -28px;
 	padding: 0;
 	margin-bottom:0;
-	background: rgb(0,48,91);
+	background: #466369;
 }
 
 
@@ -250,7 +254,7 @@ label>h2 {
 .preFooter input[type=submit]{
 	height:24px;
 	width: 41px;
-	background:url(../images/checkmark1.png) no-repeat center #d5bc8c;
+	background:url(../images/checkmark1.png) no-repeat center #f2e8d5;
 	margin-top: 9px;
 	vertical-align: top;
 }
@@ -271,7 +275,7 @@ div.donateBadge{
 div.donateBadge p{
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.1em;
-	color: #d5bc8c;
+	color: #f2e8d5;
 	text-shadow: 0 2px 2px #444;
 	padding-top: 23px;
 }
@@ -408,20 +412,24 @@ footer p.contactInfo {
 	/*=============================
 		700 Main Styles
 	==============================*/
-	.home h2.firstH2 {
-		margin-top: 20px;
+	.home section:first-child h2{
+		margin-top: 0;
 	}
 	.home section:first-child{
-		width: 52%;
-		float: left;
-		padding-right: 4%;
-	}
-	.home section:nth-child(2){
 		width: 48%;
 		float: left;
+		margin-top: 20px;
+	}
+	.home section:nth-child(2){
+		width: 50%;
+		float: left;
+		padding-left: 2%;
+		margin-left: 2%;
+		margin-top: 20px;
+		border-left: 1px solid #f2e8d5;
 	}
 	.home section:nth-child(2) h2{
-		margin-top: 20px;
+		margin-top: 0px;
 	}
 	.home section:nth-child(3){
 		clear: both;
@@ -433,8 +441,32 @@ footer p.contactInfo {
 		width: 43%;
 		margin: 0 3% 10px;
 	}
+	.subNav a.button{
+		font-size: 1.125em;
+		color: #49772e;
+		text-shadow:none;
+		display: inline-block;
+		width: 100%;
+		font-weight: bold;
+		text-decoration: underline;
+		background: none;
+		text-align: left;
+		padding-left: 3%;
+	}
+	.subNav {
+		width: 40%;
+		float: right;
+		padding-left: 3%;
+		margin-top: 41px;
+	}
+	main.programsServices {
+		float: left;
+		width: 60%;
 
-
+	}
+	.subNav .subHide {
+		display: block !important;
+	}
 
 
 	/*=======================
@@ -442,6 +474,7 @@ footer p.contactInfo {
 	=========================*/
 	section.preFooter{
 		margin-top: 0;
+		clear: both;
 	}
 	section.preFooter>div {
 		display: inline-block;
@@ -485,20 +518,23 @@ footer p.contactInfo {
 	}
 
 	.home section:first-child{
-		width: 35%;
+		width: 30%;
 	}
 	.home section:nth-child(2){
-		width:35%;
-		padding-right: 4%;
+		width:33%;
 	}
 	.home section:nth-child(3) {
-		width: 30%;
+		width: 33%;
 		float: left;
 		clear: none;
 		padding-top: 0;
+		padding-left: 2%;
+		margin-left: 2%;
+		margin-top: 20px;
+		border-left: 1px solid #f2e8d5;
 	}
 	.home section:nth-child(3) h2{
-		margin-top: 20px;
+		margin-top: 0px;
 	}
 	.home section:nth-child(3) .button {
 		width: 100%;
@@ -517,6 +553,7 @@ footer p.contactInfo {
 		text-align: left;
 		padding-left: 3%;
 	}
+	
 }
 
 
