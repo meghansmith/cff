@@ -6,7 +6,6 @@
 body {
 	line-height: 1.5;
 	color: #222222;
-	background-color: f0e6d3
 }
 p, li {
 	font-family: Lato, sans-serif;
@@ -190,8 +189,13 @@ nav.mainNav ul li {
 .intro{
 	font-weight: bold;
 }
-
-
+.subNav li {
+	margin-bottom: 18px;
+}
+.subNav ul{
+	list-style: none;
+	background-color: #e4d3b4;
+}
 
 
 
@@ -454,15 +458,23 @@ footer p.contactInfo {
 		padding-left: 3%;
 	}
 	.subNav {
-		width: 40%;
+		width: 37%;
 		float: right;
-		padding-left: 3%;
-		margin-top: 41px;
+		margin-left: 3%;
+		padding-left: 1%;
+		margin-top: 42px;
+		background-color: #e4d3b4;
 	}
-	main.programsServices {
+	.subNav a.button {
+		color: #00305b;
+		text-decoration: none;
+	}
+	ul.subHide {
+		margin-top: 0;
+	}
+	main.smallMain {
 		float: left;
 		width: 60%;
-
 	}
 	.subNav .subHide {
 		display: block !important;
