@@ -137,21 +137,27 @@ nav.mainNav ul li {
 	display: none;
 	z-index: 2;
 	background-color: #355258;
-	padding:0 5px;
+
 }
 .mainNav ul>li>ul>li{
 	display: block;
-	width: 150px;
+	white-space: nowrap;
+	padding:0 8px;
 }
 .mainNav ul ul ul {
 	top:0;
 	left:100%;
+	background-color: #244147;
+}
+.mainNav li:hover > a {
+	background-color: #355258;
 }
 .mainNav li:hover>ul {
 	display: block;
 }
-
-
+/*.mainNav ul li ul li:hover >a {
+	background-color: #244147;
+}  change this if this makes the cut.  Currently, the hover only changes the link which doesn't have padding*/
 
 
 .imageBehind{
