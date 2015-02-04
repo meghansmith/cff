@@ -119,8 +119,84 @@
 	</header>
 
 
-	<main class="donations">
+	<main class="mainAlone donateForm">
+		<h2>You can Change the Lives of Many</h2>
+		<p><span class="intro">Let's face it. Fathers impact children's lives</span> - for good and sadly sometimes for bad.  The Center strives to ensure that fathers make a long lasting, positive impact in the lives of their children.  However, we can not do it without your help. </p>
+		<h3><span class="intro">Your Donation can Sponsor a Dad:</span></h3>
 
+		<form action="register_account.html"> <!--this location checks that the form works-->
+		
+			<div class="donateRadio">
+				<input type="radio" name="amount" value="2000" id="2000">
+				<label for="2000"><span class="donateAmount">$2,000</span> - for a full 6 month program</label><br>
+			</div>
+			<div class="donateRadio">
+				<input type="radio" name="amount" value="500" id="500">
+				<label for="500"><span class="donateAmount">$500</span>  - for 6 weeks of a program</label><br>
+			</div>
+			<div class="donateRadio">
+				<input type="radio" name="amount" value="75" id="75">
+				<label for="75"><span class="donateAmount">$75</span>  - for a health check up</label><br>
+			</div>
+			<div class="donateRadio">
+				<input type="radio" name="amount" value="40" id="40">
+				<label for="40"><span class="donateAmount">$40</span>  - for a Job Skills seminar</label><br>
+			</div>
+			<input type="radio" name="amount" value="any" id="any">
+			<label for="any">$<input type="text" name="any" id="anyAmount" maxlength="7"> Your donation of any amount is greatly appreciated!  Every dollar helps fathers develop the skills they need to build strong families.</label><br>
+			<h4>Donation Frequency</h4>
+			<input type="radio" name="frequency" value="monthly" id="monthly">
+			<label for="monthly">Monthly Gift</label>
+			<input type="radio" name="frequency" value="one" id="one">
+			<label for="one">One Time Gift</label>
+				
+			<fieldset>
+				<legend>Payment Information</legend>
+				
+				<label><b>Card Type</b></label><br>
+				<input type="radio" name="card" value="visa" id="visa">
+				<label for="visa">Visa</label>
+				<input type="radio" name="card" value="mc" id="mc">
+				<label for="mc">MasterCard</label>
+				<input type="radio" name="card" value="discover" id="discover">
+				<label for="discover">Discover</label><br>
+
+				<label for="number">Card Number</label>
+				<input type="text" name="number" id="number"required> 
+				<br>
+				<label for="name">Name on Card</label>
+				<input type="text" name="name" id="firstname"required> 
+				<br>
+				
+				<label for="address">Billing Address</label>
+				<input type="text" name="address" id="address"required> <br>
+				
+				<label for="address2">Address 2</label>
+				<input type="text" name="address2" id="address2"required> <br>
+
+				<label for="city">City</label>
+				<input type="text" name="city" id="city"required> <br>
+		
+				<label for="state">State</label>
+				<input type="text" name="state" id="state" maxlength="2" required> <br>
+
+				<label for="zip">Zip Code</label>
+				<input type="text" name="zip" id="zip" maxlength="5" required> <br>
+			</fieldset>
+
+
+			<label for="email">Email Address</label><input type="email" name="email" id="email"><br>
+			<label for="newsletter">Keep up to date with our newsletter?</label>
+			<input type="checkbox" value="yes" name="newsletter" id="newsletter">
+			<br>
+
+		
+
+	
+			<input type="submit" value="Submit Your Donation">
+
+
+		</form>
 	</main>
 	
 	<section class="preFooter">

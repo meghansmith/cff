@@ -212,6 +212,57 @@ Main styles Home
 
 
 
+/*======================
+Main styles Donations
+=====================*/
+.donateForm h2, .donateForm h3, .donateForm h4 {
+	text-align: left;
+}
+.donateForm h3, .donateForm h4 {
+	margin-bottom: 0;
+}
+.donateForm input[type=text]{
+	padding-left: 5px;
+}
+.donateForm #anyAmount {
+	width: 67px;
+}
+.donateForm #state {
+	width: 30px;
+}
+.donateForm #zip {
+	width: 55px;
+}
+.donateForm legend {
+	color:  #49722e;
+}
+.donateForm label{
+	padding: 0 1%;
+	line-height: 2.5;
+}
+.donateForm p{
+	border-bottom: 5px solid #49722e;
+	padding-bottom: 20px;
+}
+.donateForm fieldset {
+	border-color: #49722e;
+}
+.donateForm input[type=submit]{
+	background-color: #49722e;
+	padding: 5px 10px;
+	font-size: 1.125em;
+	color: #f2e8d5;
+	text-shadow: 0 2px 2px #444;
+	line-height: 2.115em;
+	margin-top: 20px;
+}
+.donateForm #one, .donateForm #mc, .donateForm #discover {
+	margin-left: 4%;
+}
+
+
+
+
 
 
 
@@ -479,8 +530,11 @@ footer p.contactInfo {
 	.subNav .subHide {
 		display: block !important;
 	}
-
-
+	main.mainAlone {
+		width: 80%;
+		
+	}
+	
 	/*=======================
 		Footer Styles 700
 	=========================*/
@@ -513,7 +567,12 @@ footer p.contactInfo {
 
 
 
-
+@media screen and (min-width: 750px){
+	div.donateRadio {
+	width: 49%;
+	display: inline-block;
+	}
+}
 
 
 
@@ -565,7 +624,9 @@ footer p.contactInfo {
 		text-align: left;
 		padding-left: 3%;
 	}
-	
+	.donateForm label{
+	line-height: 2;
+	}
 }
 
 
