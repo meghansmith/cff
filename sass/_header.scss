@@ -1,0 +1,197 @@
+header {
+	position: relative;
+}
+
+.logoReplace a {
+	display:block;
+	margin:0 auto;
+	height: 105px;
+	width: 253px;
+	background-size: contain;
+	background-image: url(../images/logogogo.png);
+	background-image: linear-gradient(transparent, transparent), url ("../images/logo.svg");
+	text-indent: -9999px;
+
+	@include breakpoint($medium){
+		position: absolute;
+		left: 6%;
+	}
+}
+header p{
+	text-align: center;
+	color: $headers;
+
+	
+}
+header>p {
+	@include breakpoint($medium){
+		text-align: right;
+		padding-top: 85px;
+	}
+}
+.mainNav{
+	position: relative;
+
+	ul{
+		list-style: none;
+		padding:0;
+		margin:0;
+
+		@include breakpoint($medium){
+			background-color: $buttonColor;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			border-radius: 2px;
+		}
+	}
+	li{
+		@include breakpoint($medium){
+			display: inline-block;
+			padding-right: 2%;
+		}
+	}
+	li.mainList:first-child{
+		@include breakpoint($medium){
+			width: 18%;
+			margin-left: 1%;
+		}
+	}
+	li.mainList:nth-child(2){
+		@include breakpoint($medium){
+			width: 22%;
+		}
+	}
+	li.mainList:nth-child(3){
+		@include breakpoint($medium){
+			width: 18%;
+		}
+	}
+	li.mainList:nth-child(4){
+		@include breakpoint($medium){
+			width: 25%;
+		}
+	}
+	li a{
+		margin-top: 0;
+		padding: 0;
+		border-bottom: 2px solid #374a4b;
+		
+		@include breakpoint($medium){
+			border:none;
+		}
+	}
+	.button {
+		text-align: left;
+		padding-left: 3%;
+	}
+}
+nav>a {
+	display: inline-block;
+	height: 185px;
+	width: 119px;
+	background: url(../images/donatelong.png);
+	position: absolute;
+	right:4px;
+	top:-8px;
+	color: $buttonText;
+	text-shadow: $textShadow;
+	text-decoration: none;
+	line-height: 16.5;
+	text-align: center;
+	padding-left: 11px;
+	font-size: 1.125em;
+	font-weight: bold;
+
+	@include breakpoint($medium){
+		height: 90px;
+		width: 122px;
+		background: url(../images/donateshort.png);
+		right:-1%;
+		top:-2px;
+		line-height: 6.5;
+		padding-left: 2px;
+	}
+	@include breakpoint($large){
+		right: 1%;
+	}
+}
+
+
+.mainNav ul {
+	ul ul {
+		top:0;
+		left:100%;
+		background-color: #244147;
+	}
+	li {
+
+		position: relative;
+		&:hover > a {
+			background-color: #355258;
+		}
+		&:hover > ul {
+			display: block;
+		}
+	}		
+	a {
+		color: #buttonText;
+		text-shadow: $textShadow;
+	}
+	ul {
+		padding: 0;
+		margin:0;
+	}
+	>li>ul{
+		position: absolute;
+		display: none;
+		z-index: 2;
+		background-color: #355258;
+
+		>li {
+			display: block;
+			white-space: nowrap;
+			padding:0 8px;
+			background-color: #355258;
+		}
+	}
+	
+}
+
+img.scaleImage {
+	max-width: 100%;
+	margin-top: 13px;
+}
+.imageBehind{
+	max-width: 100%;
+	position: relative;
+	z-index: -1;
+	
+}
+div.textOver p {
+	@include breakpoint($medium){
+		background: none;
+		width: 25%;
+		margin-left: 3%;
+		bottom: 5%;
+		text-shadow: 0 1px 2px #000;
+	}
+	@include breakpoint($large){
+		font-size: 1.3em;
+	}
+}
+.textOver p{
+	color: $buttonText;
+	text-shadow: $textShadow;
+	width: 100%;
+	position: absolute;
+	bottom: -28px;
+	padding: 0;
+	margin-bottom:0;
+	background: $buttonColor;
+
+	@include breakpoint(510px){
+		padding-top: 5px;
+		padding-bottom: 5px;
+		bottom: -23px;
+	}
+}

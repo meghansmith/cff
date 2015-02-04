@@ -1,0 +1,61 @@
+.donateForm {
+	h2, h3, h4 {
+		text-align: left;
+	}
+	h3, h4 {
+		margin-bottom: 0;
+	}
+	input[type=text]{
+		padding-left: 5px;
+	}
+	#anyAmount {
+		width: 67px;
+	}
+	#state {
+		width: 30px;
+	}
+	#zip {
+		width: 55px;
+	}
+	legend {
+		color:  $donateColor;
+	}
+	label{
+		padding: 0 1%;
+		line-height: 2.5;
+
+		@include breakpoint($large){
+			line-height: 2;
+		}
+
+		h2{
+			margin-bottom: 0;
+		}
+	}
+	p{
+		border-bottom: 5px solid $donateColor;
+		padding-bottom: 20px;
+	}
+	fieldset {
+		border-color: $donateColor;
+	}
+	input[type=submit]{
+		background-color: $donateColor;
+		padding: 5px 10px;
+		font-size: 1.125em;
+		color: $buttonText;
+		text-shadow: $textShadow;
+		line-height: 2.115em;
+		margin-top: 20px;
+		border-radius: $radius;
+	}
+	#one, #mc, #discover {
+		margin-left: 4%;
+	}
+}
+div.donateRadio {
+	@include breakpoint(750px){
+		width: 49%;
+		display: inline-block;
+	}
+}

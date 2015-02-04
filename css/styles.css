@@ -1,646 +1,829 @@
-/*styles for CFF*/
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Open+Sans:400italic,400,700);
-*, *:before, *:after {
-	box-sizing:border-box;
-}
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Open+Sans:400italic,400,700");
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
 body {
-	line-height: 1.5;
-	color: #222222;
-}
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  line-height: 1.5;
+  color: #222222; }
+
 p, li {
-	font-family: Lato, sans-serif;
-	font-size: 1.05em;
-}
-h1,h2,h3, h4{
-	font-family: "Open Sans", sans-serif;
-	color: #00305B;
-	text-align: center;
-}
-a{
-	font-family: "Open Sans", sans-serif;
-	color: #49722e;
-}
-.wrapper{
- width: 92%;
- margin-left: 3%;
- margin-right: 3%;
-}
+  font-family: Lato, sans-serif;
+  font-size: 1.05em; }
+
+h1, h2, h3, h4 {
+  font-family: "Open Sans", sans-serif;
+  color: #00305b;
+  text-align: center; }
+
+a {
+  font-family: #00305b;
+  color: #49722e; }
+
+.wrapper {
+  width: 92%;
+  margin-left: 3%;
+  margin-right: 3%; }
+  @media (min-width: 1100px) {
+    .wrapper {
+      width: 1040px;
+      margin: 0 auto; } }
+
 .innerContent {
-	width: 92%;
-	margin-right: 3%;
-	margin-left: 3%;
-}
+  width: 92%;
+  margin-left: 3%;
+  margin-right: 3%; }
+
 .visuallyHidden {
-	position: absolute;
-	left: -9999px;
-}
+  position: absolute;
+  left: -9999px; }
+
 .hide {
-	display: none;
-}
-.button{
-	font-size: 1.125em;
-	color: #f2e8d5;
-	text-shadow: 0 2px 2px #444;
-	display: inline-block;
-	width: 100%;
-	height: 40px;
-	background-color: #466369;
-	border-radius: 2px;
-	text-align: center;
-	text-decoration: none;
-	line-height: 2.115;
-	margin-top: 5px;
-}
+  display: none; }
+
+.button {
+  font-size: 1.125em;
+  color: #f2e8d5;
+  text-shadow: 0 2px 2px #444;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  background-color: #466369;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.115;
+  margin-top: 5px; }
+
 /* THE ALMIGHTY CLEARFIX */
 .clearfix:before, .clearfix:after {
   content: "";
-  display: table;
-}
+  display: table; }
+
 .clearfix:after {
-  clear: both;
-} 
+  clear: both; }
+
 .clearfix {
-  *zoom: 1;
-}
+  *zoom: 1; }
 
+span.slightlyLarger {
+  font-size: 1.3em;
+  text-decoration: underline; }
 
-
-
-
-
-/*======================
-Header styles
-=====================*/
 header {
-	position: relative;
-}
+  position: relative; }
 
 .logoReplace a {
-	display:block;
-	margin:0 auto;
-	height: 105px;
-	width: 253px;
-	background-size: contain;
-	background-image: url(../images/logogogo.png);
-	background-image: linear-gradient(transparent, transparent), url ("../images/logo.svg");
-	text-indent: -9999px;
-}
-header p{
-	text-align: center;
-	color: #00305b;
-}
-nav.mainNav{
-	position: relative;
-}
-.mainNav ul{
-	list-style: none;
-	padding:0;
-	margin:0;
-}
-.mainNav li a{
-	margin-top: 0;
-	padding: 0;
-	border-bottom: 2px solid #374a4b;
-}
-.mainNav .button {
-	text-align: left;
-	padding-left: 3%;
-}
-nav>a {
-	display: inline-block;
-	height: 185px;
-	width: 119px;
-	background: url(../images/donatelong.png);
-	position: absolute;
-	right:4px;
-	top:-8px;
-	color: #f2e8d5;
-	text-shadow: 0 1px 2px #444;
-	text-decoration: none;
-	line-height: 16.5;
-	text-align: center;
-	padding-left: 11px;
-	font-size: 1.125em;
-	font-weight: bold;
-}
-.mainNav ul li a{
-	color: #f2e8d5;
-	text-shadow: 0 2px 2px #444;
-}
-.mainNav ul li ul {
-	padding: 0;
-	margin:0;
-}
-nav.mainNav ul li {
-	position: relative;
-	
-}
-.mainNav ul>li>ul {
-	position: absolute;
-	display: none;
-	z-index: 2;
-	background-color: #355258;
+  display: block;
+  margin: 0 auto;
+  height: 105px;
+  width: 253px;
+  background-size: contain;
+  background-image: url(../images/logogogo.png);
+  background-image: linear-gradient(transparent, transparent), url "../images/logo.svg";
+  text-indent: -9999px; }
+  @media (min-width: 700px) {
+    .logoReplace a {
+      position: absolute;
+      left: 6%; } }
 
-}
-.mainNav ul>li>ul>li{
-	display: block;
-	white-space: nowrap;
-	padding:0 8px;
-}
+header p {
+  text-align: center;
+  color: #00305b; }
+
+@media (min-width: 700px) {
+  header > p {
+    text-align: right;
+    padding-top: 85px; } }
+
+.mainNav {
+  position: relative; }
+  .mainNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    @media (min-width: 700px) {
+      .mainNav ul {
+        background-color: #466369;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border-radius: 2px; } }
+  @media (min-width: 700px) {
+    .mainNav li {
+      display: inline-block;
+      padding-right: 2%; } }
+  @media (min-width: 700px) {
+    .mainNav li.mainList:first-child {
+      width: 18%;
+      margin-left: 1%; } }
+  @media (min-width: 700px) {
+    .mainNav li.mainList:nth-child(2) {
+      width: 22%; } }
+  @media (min-width: 700px) {
+    .mainNav li.mainList:nth-child(3) {
+      width: 18%; } }
+  @media (min-width: 700px) {
+    .mainNav li.mainList:nth-child(4) {
+      width: 25%; } }
+  .mainNav li a {
+    margin-top: 0;
+    padding: 0;
+    border-bottom: 2px solid #374a4b; }
+    @media (min-width: 700px) {
+      .mainNav li a {
+        border: none; } }
+  .mainNav .button {
+    text-align: left;
+    padding-left: 3%; }
+
+nav > a {
+  display: inline-block;
+  height: 185px;
+  width: 119px;
+  background: url(../images/donatelong.png);
+  position: absolute;
+  right: 4px;
+  top: -8px;
+  color: #f2e8d5;
+  text-shadow: 0 2px 2px #444;
+  text-decoration: none;
+  line-height: 16.5;
+  text-align: center;
+  padding-left: 11px;
+  font-size: 1.125em;
+  font-weight: bold; }
+  @media (min-width: 700px) {
+    nav > a {
+      height: 90px;
+      width: 122px;
+      background: url(../images/donateshort.png);
+      right: -1%;
+      top: -2px;
+      line-height: 6.5;
+      padding-left: 2px; } }
+  @media (min-width: 930px) {
+    nav > a {
+      right: 1%; } }
+
 .mainNav ul ul ul {
-	top:0;
-	left:100%;
-	background-color: #244147;
-}
-.mainNav li:hover > a {
-	background-color: #355258;
-}
-.mainNav li:hover>ul {
-	display: block;
-}
-/*.mainNav ul li ul li:hover >a {
-	background-color: #244147;
-}  change this if this makes the cut.  Currently, the hover only changes the link which doesn't have padding*/
+  top: 0;
+  left: 100%;
+  background-color: #244147; }
+.mainNav ul li {
+  position: relative; }
+  .mainNav ul li:hover > a {
+    background-color: #355258; }
+  .mainNav ul li:hover > ul {
+    display: block; }
+.mainNav ul a {
+  color: #buttonText;
+  text-shadow: 0 2px 2px #444; }
+.mainNav ul ul {
+  padding: 0;
+  margin: 0; }
+.mainNav ul > li > ul {
+  position: absolute;
+  display: none;
+  z-index: 2;
+  background-color: #355258; }
+  .mainNav ul > li > ul > li {
+    display: block;
+    white-space: nowrap;
+    padding: 0 8px;
+    background-color: #355258; }
 
 img.scaleImage {
-	max-width: 100%;
-	margin-top: 13px;
-}
-.imageBehind{
-	max-width: 100%;
-	position: relative;
-	z-index: -1;
-	
-}
-.textOver p{
-	color: #f2e8d5;
-	text-shadow: 0 2px 2px #444;
-	width: 100%;
-	position: absolute;
-	bottom: -28px;
-	padding: 0;
-	margin-bottom:0;
-	background: #466369;
-}
+  max-width: 100%;
+  margin-top: 13px; }
 
+.imageBehind {
+  max-width: 100%;
+  position: relative;
+  z-index: -1; }
 
+@media (min-width: 700px) {
+  div.textOver p {
+    background: none;
+    width: 25%;
+    margin-left: 3%;
+    bottom: 5%;
+    text-shadow: 0 1px 2px #000; } }
+@media (min-width: 930px) {
+  div.textOver p {
+    font-size: 1.3em; } }
 
+.textOver p {
+  color: #f2e8d5;
+  text-shadow: 0 2px 2px #444;
+  width: 100%;
+  position: absolute;
+  bottom: -28px;
+  padding: 0;
+  margin-bottom: 0;
+  background: #466369; }
+  @media (min-width: 510px) {
+    .textOver p {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      bottom: -23px; } }
 
-/*===================================================
-                    Main styles
-====================================================*/
-.intro{
-	font-weight: bold;
-}
+@media (min-width: 700px) {
+  .subNav {
+    width: 37%;
+    float: right;
+    margin-left: 3%;
+    padding-left: 1%;
+    margin-top: 42px;
+    background-color: #e4d3b4; } }
 .subNav li {
-	margin-bottom: 18px;
-}
-.subNav ul{
-	list-style: none;
-	background-color: #e4d3b4;
-}
+  margin-bottom: 18px; }
+.subNav ul {
+  list-style: none;
+  background-color: #e4d3b4; }
+@media (min-width: 700px) {
+  .subNav a.button {
+    font-size: 1.125em;
+    color: #00305b;
+    text-shadow: none;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    background: none;
+    text-align: left;
+    padding-left: 3%; } }
+@media (min-width: 700px) {
+  .subNav .subHide {
+    display: block !important; } }
 
+@media (min-width: 700px) {
+  ul.subHide {
+    margin-top: 0; } }
 
+.intro {
+  font-weight: bold; }
 
+@media (min-width: 700px) {
+  main.smallMain {
+    float: left;
+    width: 60%; } }
 
-/*======================
-Main styles Home
-=====================*/
+@media (min-width: 700px) {
+  main.mainAlone {
+    width: 80%; } }
+
 .home h2.firstH2 {
-	margin-top: 70px;
-}
+  margin-top: 70px; }
 .home h2 {
-	margin-top: 45px;
-}
+  margin-top: 45px; }
+@media (min-width: 930px) {
+  .home section .button {
+    font-size: 1.125em;
+    color: #49772e;
+    text-shadow: none;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    text-decoration: underline;
+    background: none;
+    text-align: left;
+    padding-left: 3%; } }
+@media (min-width: 700px) {
+  .home section:first-child {
+    width: 48%;
+    float: left;
+    margin-top: 20px; } }
+  @media (min-width: 700px) and (min-width: 930px) {
+    .home section:first-child {
+      width: 30%; } }
+@media (min-width: 700px) {
+    .home section:first-child h2 {
+      margin-top: 0; }
+  .home section:nth-child(2) {
+    width: 50%;
+    float: left;
+    padding-left: 2%;
+    margin-left: 2%;
+    margin-top: 20px;
+    border-left: 1px solid #f2e8d5; } }
+  @media (min-width: 700px) and (min-width: 930px) {
+    .home section:nth-child(2) {
+      width: 33%; } }
+@media (min-width: 700px) {
+    .home section:nth-child(2) h2 {
+      margin-top: 0px; }
+  .home section:nth-child(3) {
+    clear: both;
+    padding-top: 5px;
+    max-width: 740px;
+    margin: 0 auto; } }
+  @media (min-width: 700px) and (min-width: 930px) {
+    .home section:nth-child(3) {
+      width: 33%;
+      float: left;
+      clear: none;
+      padding-top: 0;
+      padding-left: 2%;
+      margin-left: 2%;
+      margin-top: 20px;
+      border-left: 1px solid #f2e8d5; } }
+  @media (min-width: 700px) and (min-width: 930px) {
+    .home section:nth-child(3) h2 {
+      margin-top: 0; } }
+@media (min-width: 700px) {
+    .home section:nth-child(3) .button {
+      width: 43%;
+      margin: 0 3% 10px; } }
+    @media (min-width: 700px) and (min-width: 930px) {
+      .home section:nth-child(3) .button {
+        width: 100%;
+        margin-bottom: 5px;
+        margin-left: 0; } }
 
-
-
-/*======================
-Main styles Donations
-=====================*/
 .donateForm h2, .donateForm h3, .donateForm h4 {
-	text-align: left;
-}
+  text-align: left; }
 .donateForm h3, .donateForm h4 {
-	margin-bottom: 0;
-}
-.donateForm input[type=text]{
-	padding-left: 5px;
-}
+  margin-bottom: 0; }
+.donateForm input[type=text] {
+  padding-left: 5px; }
 .donateForm #anyAmount {
-	width: 67px;
-}
+  width: 67px; }
 .donateForm #state {
-	width: 30px;
-}
+  width: 30px; }
 .donateForm #zip {
-	width: 55px;
-}
+  width: 55px; }
 .donateForm legend {
-	color:  #49722e;
-}
-.donateForm label{
-	padding: 0 1%;
-	line-height: 2.5;
-}
-.donateForm p{
-	border-bottom: 5px solid #49722e;
-	padding-bottom: 20px;
-}
+  color: #49722e; }
+.donateForm label {
+  padding: 0 1%;
+  line-height: 2.5; }
+  @media (min-width: 930px) {
+    .donateForm label {
+      line-height: 2; } }
+  .donateForm label h2 {
+    margin-bottom: 0; }
+.donateForm p {
+  border-bottom: 5px solid #49722e;
+  padding-bottom: 20px; }
 .donateForm fieldset {
-	border-color: #49722e;
-}
-.donateForm input[type=submit]{
-	background-color: #49722e;
-	padding: 5px 10px;
-	font-size: 1.125em;
-	color: #f2e8d5;
-	text-shadow: 0 2px 2px #444;
-	line-height: 2.115em;
-	margin-top: 20px;
-}
+  border-color: #49722e; }
+.donateForm input[type=submit] {
+  background-color: #49722e;
+  padding: 5px 10px;
+  font-size: 1.125em;
+  color: #f2e8d5;
+  text-shadow: 0 2px 2px #444;
+  line-height: 2.115em;
+  margin-top: 20px;
+  border-radius: 2px; }
 .donateForm #one, .donateForm #mc, .donateForm #discover {
-	margin-left: 4%;
-}
+  margin-left: 4%; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-										/*==============================
-										Footer styles
-										===============================*/
-
-
+@media (min-width: 750px) {
+  div.donateRadio {
+    width: 49%;
+    display: inline-block; } }
 
 section.preFooter {
-	display: relative;
-	margin-top: 70px;
-}
+  display: relative;
+  margin-top: 70px; }
+  @media (min-width: 700px) {
+    section.preFooter {
+      margin-top: 0;
+      clear: both; } }
+  @media (min-width: 700px) {
+    section.preFooter > div {
+      display: inline-block;
+      width: 31%; } }
 
-.preFooter h2{
-	text-transform: uppercase;
-	font-size: 1.125em;
-	margin-top: 50px;
-}
+.preFooter h2 {
+  text-transform: uppercase;
+  font-size: 1.125em;
+  margin-top: 50px; }
 .preFooter div {
-	text-align: center;
-}
-label>h2 {
-	margin-bottom: 0;
-}
+  text-align: center; }
 .preFooter div.email {
-	height: 40px;
-	text-align: center;
-	background-color: #548db8;
-}
+  height: 40px;
+  text-align: center;
+  background-color: #466369; }
 .preFooter textarea {
-	height: 30px;
-	width: 75%;
-	margin-top: 5px;
-	padding-left: 5px;
-}
-.preFooter input[type=submit]{
-	height:24px;
-	width: 41px;
-	background:url(../images/checkmark1.png) no-repeat center #f2e8d5;
-	margin-top: 9px;
-	vertical-align: top;
-}
+  height: 30px;
+  width: 75%;
+  margin-top: 5px;
+  padding-left: 5px; }
+.preFooter input[type=submit] {
+  height: 24px;
+  width: 41px;
+  background: url(../images/checkmark1.png) no-repeat center #f2e8d5;
+  margin-top: 9px;
+  vertical-align: top; }
+
 footer {
-	background-color: #e4d3b4;
-	margin-top: 100px;
-}
-div.donateBadge{
-	width: 329px;
-	height:136px;
-	background: url(../images/donateBadge.png) no-repeat;
-	text-align: center;
-	margin: 0 auto;
-	margin-bottom: -171px;
-	margin-top: 50px;
-	position: relative;
-}
-div.donateBadge p{
-	font-family: "Open Sans", sans-serif;
-	font-size: 1.1em;
-	color: #f2e8d5;
-	text-shadow: 0 2px 2px #444;
-	padding-top: 23px;
-}
-span.slightlyLarger {
-	font-size: 1.3em;
-	text-decoration: underline;
-}
-div.donateBadge a {
-		text-decoration: none;
-}
-footer ul {
-	list-style: none;
-	text-align: center;
-	padding-left: 0;
-}
-footer nav>ul{
-	padding-top: 45px;
-}
-footer nav h3 {
-	margin: 30px 0 0;
-}
-footer nav li{
-	margin: 6px 0;
-}
-footer p {
-	font-size: .8em;
-	text-align: right;
-}
-footer p.contactInfo {
-	text-align: left;
-}
+  background-color: #e4d3b4;
+  margin-top: 100px; }
+  footer p {
+    font-size: .8em;
+    text-align: right; }
+  @media (min-width: 700px) {
+    footer p.innerContent {
+      display: inline-block;
+      width: 63%; } }
+  footer p.contactInfo {
+    text-align: left; }
+    @media (min-width: 700px) {
+      footer p.contactInfo {
+        width: 25%;
+        float: left; } }
+  footer ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0; }
+  footer nav > ul {
+    padding-top: 45px; }
+    @media (min-width: 700px) {
+      footer nav > ul > li {
+        display: inline-block;
+        width: 20%;
+        margin-right: 2%;
+        vertical-align: top; } }
+  footer nav h3 {
+    margin: 30px 0 0; }
+  footer nav li {
+    margin: 6px 0; }
 
+div.donateBadge {
+  width: 329px;
+  height: 136px;
+  background: url(../images/donateBadge.png) no-repeat;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: -171px;
+  margin-top: 50px;
+  position: relative; }
+  div.donateBadge p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #f2e8d5;
+    text-shadow: 0 2px 2px #444;
+    padding-top: 23px; }
+  div.donateBadge a {
+    text-decoration: none; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*========================================================================
-						Media Query 510 - fix header home
-==========================================================================*/
-
-@media screen and (min-width: 510px){
-	.textOver p{
-		padding-top: 5px;
-		padding-bottom: 5px;
-		bottom: -23px;
-	}
-}
-
-
-
-
-
-
-/*========================================================================
-						Media Query 700 
-==========================================================================*/
-@media screen and (min-width: 700px) {
-
-	/*===========================
-			Header Styles
-	===========================*/
-
-	.logoReplace a {
-		position: absolute;
-		left: 6%;
-	}
-	header>p {
-		text-align: right;
-		padding-top: 85px;
-	}
-
-	.mainNav li{
-		display: inline-block;
-		padding-right: 2%;
-	}
-	.mainNav li.mainList:first-child{
-		width: 18%;
-		margin-left: 1%;
-	}
-	.mainNav li.mainList:nth-child(2){
-		width: 22%;
-	}
-	.mainNav li.mainList:nth-child(3){
-		width: 18%;
-	}
-	.mainNav li.mainList:nth-child(4){
-		width: 25%;
-	}
-
-	.mainNav li a {
-		border:none;
-	}
-	.mainNav ul {
-		background-color: #466369;
-		margin-bottom: 20px;
-		margin-top: 20px;
-		border-radius: 2px;
-	}
-	nav>a {
-
-		height: 90px;
-		width: 122px;
-		background: url(../images/donateshort.png);
-		right:-1%;
-		top:-2px;
-		line-height: 6.5;
-		padding-left: 2px;
-
-	}
-
-
-	
-
-
-
-	div.textOver p {
-		background: none;
-		width: 25%;
-		margin-left: 3%;
-		bottom: 5%;
-		text-shadow: 0 1px 2px #000;
-	}
-
-
-	/*=============================
-		700 Main Styles
-	==============================*/
-	.home section:first-child h2{
-		margin-top: 0;
-	}
-	.home section:first-child{
-		width: 48%;
-		float: left;
-		margin-top: 20px;
-	}
-	.home section:nth-child(2){
-		width: 50%;
-		float: left;
-		padding-left: 2%;
-		margin-left: 2%;
-		margin-top: 20px;
-		border-left: 1px solid #f2e8d5;
-	}
-	.home section:nth-child(2) h2{
-		margin-top: 0px;
-	}
-	.home section:nth-child(3){
-		clear: both;
-		padding-top: 5px;
-		max-width: 740px;
-		margin: 0 auto;
-	}
-	.home section:nth-child(3) .button {
-		width: 43%;
-		margin: 0 3% 10px;
-	}
-	.subNav a.button{
-		font-size: 1.125em;
-		color: #49772e;
-		text-shadow:none;
-		display: inline-block;
-		width: 100%;
-		font-weight: bold;
-		text-decoration: underline;
-		background: none;
-		text-align: left;
-		padding-left: 3%;
-	}
-	.subNav {
-		width: 37%;
-		float: right;
-		margin-left: 3%;
-		padding-left: 1%;
-		margin-top: 42px;
-		background-color: #e4d3b4;
-	}
-	.subNav a.button {
-		color: #00305b;
-		text-decoration: none;
-	}
-	ul.subHide {
-		margin-top: 0;
-	}
-	main.smallMain {
-		float: left;
-		width: 60%;
-	}
-	.subNav .subHide {
-		display: block !important;
-	}
-	main.mainAlone {
-		width: 80%;
-		
-	}
-	
-	/*=======================
-		Footer Styles 700
-	=========================*/
-	section.preFooter{
-		margin-top: 0;
-		clear: both;
-	}
-	section.preFooter>div {
-		display: inline-block;
-		width: 31%;
-	}
-	footer nav>ul>li {
-		display: inline-block;
-		width: 20%;
-		margin-right: 2%;
-		vertical-align: top;
-	}
-	footer p.innerContent {
-		display: inline-block;
-		width: 63%;
-	}
-	footer p.contactInfo {
-		width: 25%;
-		float: left;
-	}
-
-}
-
-
-
-
-
-@media screen and (min-width: 750px){
-	div.donateRadio {
-	width: 49%;
-	display: inline-block;
-	}
-}
-
-
-
-/*========================================================================
-						Media Query 930 - 
-==========================================================================*/
-
-@media screen and (min-width: 930px){
-	nav>a {
-		right: 1%;
-	}
-	div.textOver p {
-		font-size: 1.3em;
-	}
-
-	.home section:first-child{
-		width: 30%;
-	}
-	.home section:nth-child(2){
-		width:33%;
-	}
-	.home section:nth-child(3) {
-		width: 33%;
-		float: left;
-		clear: none;
-		padding-top: 0;
-		padding-left: 2%;
-		margin-left: 2%;
-		margin-top: 20px;
-		border-left: 1px solid #f2e8d5;
-	}
-	.home section:nth-child(3) h2{
-		margin-top: 0px;
-	}
-	.home section:nth-child(3) .button {
-		width: 100%;
-		margin-bottom: 5px;
-		margin-left: 0;
-	}
-	.home section .button {
-		font-size: 1.125em;
-		color: #49772e;
-		text-shadow:none;
-		display: inline-block;
-		width: 100%;
-		font-weight: bold;
-		text-decoration: underline;
-		background: none;
-		text-align: left;
-		padding-left: 3%;
-	}
-	.donateForm label{
-	line-height: 2;
-	}
-}
-
-
-
-
-/*============================================================
-								Cut Off Width 1100/1040
-============================================================*/
-@media screen and (min-width: 1100px){
-	.wrapper {
-		width: 1040px;
-		margin: 0 auto;
-	}
-}
+/*# sourceMappingURL=styles.css.map */

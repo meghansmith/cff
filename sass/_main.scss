@@ -1,0 +1,106 @@
+//General main styles
+
+.intro{
+	font-weight: bold;
+}
+
+
+//Home Main Styles
+main.smallMain {
+	@include breakpoint($medium){
+		float: left;
+		width: 60%;
+	}
+}
+main.mainAlone {
+	@include breakpoint($medium){
+		width: 80%;
+	}
+}
+.home {
+	h2.firstH2 {
+		margin-top: 70px;
+	}
+	h2 {
+	margin-top: 45px;
+	}
+
+	section .button {
+		@include breakpoint($large){
+			font-size: 1.125em;
+			color: #49772e;
+			text-shadow:none;
+			display: inline-block;
+			width: 100%;
+			font-weight: bold;
+			text-decoration: underline;
+			background: none;
+			text-align: left;
+			padding-left: 3%;
+		}
+	}
+	@include breakpoint($medium){
+		section:first-child {
+			width: 48%;
+			float: left;
+			margin-top: 20px;
+
+			@include breakpoint($large){
+				width:30%;
+			}
+			
+			h2{
+				margin-top: 0;
+			}
+		}
+		section:nth-child(2){
+			width: 50%;
+			float: left;
+			padding-left: 2%;
+			margin-left: 2%;
+			margin-top: 20px;
+			border-left: 1px solid $tan;
+
+			@include breakpoint($large){
+				width: 33%;
+			}
+
+			h2{
+				margin-top: 0px;
+			}
+		}
+		section:nth-child(3){
+			clear: both;
+			padding-top: 5px;
+			max-width: 740px;
+			margin: 0 auto;
+
+			@include breakpoint($large){
+				width: 33%;
+				float: left;
+				clear: none;
+				padding-top: 0;
+				padding-left: 2%;
+				margin-left: 2%;
+				margin-top: 20px;
+				border-left: 1px solid $tan;
+			}
+			
+			h2 {
+				@include breakpoint($large){
+					margin-top: 0;
+				}
+			}
+			.button {
+				width: 43%;
+				margin: 0 3% 10px;
+
+				@include breakpoint($large) {
+					width: 100%;
+					margin-bottom: 5px;
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
