@@ -79,6 +79,7 @@ header>p {
 		@include breakpoint($medium){
 			border:none;
 		}
+		color: $tan;
 	}
 	.button {
 		text-align: left;
