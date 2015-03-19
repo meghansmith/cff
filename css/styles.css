@@ -375,7 +375,11 @@ h1, h2, h3, h4 {
 
 a {
   font-family: #00305b;
-  color: #49722e; }
+  color: #49722e;
+  transition: all .3s ease; }
+  @media (min-width: 1025px) {
+    a:hover {
+      color: #00305b; } }
 
 .wrapper {
   width: 92%;
@@ -411,6 +415,10 @@ a {
   text-decoration: none;
   line-height: 2.115;
   margin-top: 5px; }
+
+@media (min-width: 1025px) {
+  main a.button:hover:hover {
+    color: #00305b; } }
 
 /* THE ALMIGHTY CLEARFIX */
 .clearfix:before, .clearfix:after {
@@ -490,6 +498,9 @@ header p {
     @media (min-width: 700px) {
       .mainNav li a {
         border: none; } }
+    @media (min-width: 1025px) {
+      .mainNav li a:hover {
+        color: #f2e8d5; } }
   .mainNav .button {
     text-align: left;
     padding-left: 3%; }
@@ -522,6 +533,9 @@ nav > a {
   @media (min-width: 930px) {
     nav > a {
       right: 1%; } }
+  @media (min-width: 1025px) {
+    nav > a:hover {
+      color: #fefcf9; } }
 
 .mainNav ul ul ul {
   top: 0;
@@ -549,6 +563,8 @@ nav > a {
     white-space: nowrap;
     padding: 0 8px;
     background-color: #355258; }
+    .mainNav ul > li > ul > li a:hover {
+      color: #fefcf9; }
 
 img.scaleImage {
   max-width: 100%;
@@ -733,7 +749,10 @@ img.scaleImage {
   text-shadow: 0 2px 2px #444;
   line-height: 2.115em;
   margin-top: 20px;
-  border-radius: 2px; }
+  border-radius: 2px;
+  transition: all .3s ease; }
+  .donateForm input[type=submit]:hover {
+    color: #fefcf9; }
 .donateForm #one, .donateForm #mc, .donateForm #discover {
   margin-left: 4%; }
 
@@ -825,6 +844,7 @@ div.donateBadge {
     text-shadow: 0 2px 2px #444;
     padding-top: 23px; }
   div.donateBadge a {
-    text-decoration: none; }
-
-/*# sourceMappingURL=styles.css.map */
+    text-decoration: none;
+    color: #f2e8d5; }
+    div.donateBadge a:hover {
+      color: #fefcf9; }

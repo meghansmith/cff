@@ -113,6 +113,12 @@ div.donateBadge{
 	}
 	a {
 		text-decoration: none;
+		color: $tan;
+		
+			&:hover{
+				color: #fefcf9;
+			}
+	
 	}
 }
 

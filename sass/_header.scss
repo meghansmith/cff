@@ -80,6 +80,11 @@ header>p {
 			border:none;
 		}
 		color: $tan;
+		@include breakpoint(1025px){
+		&:hover{
+			color: $tan;
+		}
+	}
 	}
 	.button {
 		text-align: left;
@@ -103,6 +108,7 @@ nav>a {
 	font-size: 1.125em;
 	font-weight: bold;
 
+
 	@include breakpoint($medium){
 		height: 90px;
 		width: 122px;
@@ -114,6 +120,11 @@ nav>a {
 	}
 	@include breakpoint($large){
 		right: 1%;
+	}
+	@include breakpoint(1025px){
+		&:hover{
+			color: #fefcf9;
+		}
 	}
 }
 
@@ -153,6 +164,10 @@ nav>a {
 			white-space: nowrap;
 			padding:0 8px;
 			background-color: #355258;
+
+			a:hover{
+				color: #fefcf9;
+			}
 		}
 	}
 	

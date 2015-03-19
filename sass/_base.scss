@@ -18,6 +18,13 @@ h1,h2,h3, h4{
 a{
 	font-family: $headers;
 	color: $linkText;
+	transition: all .3s ease;
+
+	@include breakpoint(1025px){
+		&:hover{
+			color: $blue;
+		}
+	}
 }
 .wrapper {
 	 width: 92%;
@@ -54,6 +61,16 @@ a{
 	text-decoration: none;
 	line-height: 2.115;
 	margin-top: 5px;
+
+
+	
+}
+main a.button:hover{
+	@include breakpoint(1025px){
+		&:hover{
+			color: $blue;
+		}
+	}
 }
 /* THE ALMIGHTY CLEARFIX */
 .clearfix:before, .clearfix:after {

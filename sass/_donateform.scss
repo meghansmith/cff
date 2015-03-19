@@ -48,6 +48,11 @@
 		line-height: 2.115em;
 		margin-top: 20px;
 		border-radius: $radius;
+		transition: all .3s ease;
+
+		&:hover{
+			color: #fefcf9;
+		}
 	}
 	#one, #mc, #discover {
 		margin-left: 4%;
